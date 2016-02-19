@@ -1,16 +1,40 @@
-* {}
+* {
+    text-align: justify;
+    box-sizing: border-box;
+    position: relative;
+}
 
-
-/*desktop*/
-
-@media (min-width: 992px) {}
-
-
-/*tablet*/
-
-@media (min-width: 768px) and (max-width: 991px) {}
+section {
+    float: left;
+}
 
 
 /*phone*/
 
-@media (max-width: 767px)
+@media screen and (max-width: 767px) {
+    .one_col {
+        width: 100%;
+    }
+}
+
+
+/*tablet*/
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .two_cols {
+        width: 50%;
+    }
+    .bottom_col {
+        clear: both;
+        width: 100%;
+    }
+}
+
+
+/*desktop*/
+
+@media screen and (min-width: 992px) {
+    .three_cols {
+        width: 33.3%;
+    }
+}

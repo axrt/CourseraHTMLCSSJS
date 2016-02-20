@@ -1,11 +1,53 @@
 * {
     text-align: justify;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10pt;
+    font-family: Ubuntu, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin: 2rem;
+}
+
+section,
+h2 {
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 100;
     position: relative;
+    float: right;
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-top: none;
+    border-right: none;
+}
+
+h1,
+h2 {
+    text-transform: capitalize;
 }
 
 section {
     float: left;
+    text-transform: lowercase;
+}
+
+p {
+    clear: both;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 
@@ -13,7 +55,10 @@ section {
 
 @media screen and (max-width: 767px) {
     .one_col {
-        width: 100%;
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-bottom: 2.5%;
     }
 }
 
@@ -22,7 +67,8 @@ section {
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
     .two_cols {
-        width: 50%;
+        width: 40%;
+        margin-left: 5%;
     }
     .bottom_col {
         clear: both;

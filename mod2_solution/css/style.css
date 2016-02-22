@@ -39,15 +39,28 @@ h2 {
     text-transform: capitalize;
 }
 
+#chicken h2 {
+    background-color: lightcoral;
+}
+
+#beef h2 {
+    background-color: darkred;
+    color: white;
+}
+
+#sushi h2 {
+    background-color: khaki;
+}
+
 section {
     float: left;
     text-transform: lowercase;
+    background-color: lightgray;
 }
 
 p {
     clear: both;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 1rem;
 }
 
 
@@ -55,10 +68,10 @@ p {
 
 @media screen and (max-width: 767px) {
     .one_col {
-        width: 90%;
-        margin-right: 5%;
-        margin-left: 5%;
-        margin-bottom: 2.5%;
+        width: 96%;
+        margin-right: 2%;
+        margin-left: 2%;
+        margin-bottom: 2%;
     }
 }
 
@@ -67,12 +80,22 @@ p {
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
     .two_cols {
-        width: 40%;
-        margin-left: 5%;
+        width: 47%;
     }
     .bottom_col {
         clear: both;
-        width: 100%;
+        width: 96%;
+        margin-top: 2%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    #chicken {
+        margin-right: 1%;
+        margin-left: 2%;
+    }
+    #beef {
+        margin-right: 2%;
+        margin-left: 1%;
     }
 }
 
@@ -81,6 +104,15 @@ p {
 
 @media screen and (min-width: 992px) {
     .three_cols {
-        width: 33.3%;
+        width: 30.6666%;
+    }
+    .three_cols + .three_cols {
+        margin-left: 2%;
+    }
+    #chicken {
+        margin-left: 2%;
+    }
+    #sushi {
+        margin-right: 2%;
     }
 }

@@ -1,13 +1,24 @@
 html {
     font-size: 10pt;
-    font-family: Ubuntu, Helvetica, sans-serif;
 }
 
 body {}
 
+
+/*HEADER*/
+
 #header-nav .container {
     margin: 0;
     padding: 0;
+}
+
+#nav-list a {
+    text-align: center;
+    background-color: bisque;
+}
+
+#nav-list a:hover {
+    background-color: orange;
 }
 
 @media (min-width:768px) {
@@ -16,3 +27,17 @@ body {}
         margin-left: 0;
     }
 }
+
+
+/*HEADER_END*/
+
+
+/*MAIN*/
+
+.food_type {
+    margin-top: 1rem;
+    background-color: lightgrey;
+}
+
+
+/*MAIN_END*/

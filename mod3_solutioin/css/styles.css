@@ -1,0 +1,18 @@
+html {
+    font-size: 10pt;
+    font-family: Ubuntu, Helvetica, sans-serif;
+}
+
+body {}
+
+#header-nav .container {
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width:768px) {
+    .navbar>.container .navbar-brand,
+    .navbar>.container-fluid .navbar-brand {
+        margin-left: 0;
+    }
+}
